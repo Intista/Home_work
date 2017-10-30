@@ -1,0 +1,26 @@
+.page-2 {
+  background-image: url("../../image/page-2/background.jpg"); }
+
+.title {
+  color: #2f3234;
+  text-align: center; }
+
+.content__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.content__title {
+  font-family: 'lifehack';
+  font-size: 28.1px; }
+
+.content__text {
+  font-family: 'ubuntu';
+  font-size: 14px;
+  font-weight: lighter; }
+
+/*# sourceMappingURL=page-2.css.map */

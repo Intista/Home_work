@@ -1,0 +1,27 @@
+.page2 {
+    background-image: url('../image/page2/background.jpg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.title {
+    color: #2f3234;
+    text-align: center;
+}
+
+.content__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content__title {
+    font-family: 'lifehack';
+    font-size: 28.1px
+}
+
+.content__text {
+    font-family: 'ubuntu';
+    font-size: 14px;
+    font-weight: lighter;
+}
