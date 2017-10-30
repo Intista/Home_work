@@ -8,20 +8,32 @@
 .title--2 {
     color: #2f3234;
     text-align: center;
+    margin-top: 49px;
+}
+
+.content {
+    padding: 0 69px;
+    margin-top: 68px;
 }
 
 .content__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.content__pic {
+    min-height: 114px;
 }
 
 .content__title {
     font-family: 'lifehack';
-    font-size: 28.1px
+    font-size: 24px;
+    max-width: 200px;
 }
 
 .content__text {
     font-family: 'ubuntu';
     font-size: 14px;
     font-weight: lighter;
+    margin-top: 10px;
 }

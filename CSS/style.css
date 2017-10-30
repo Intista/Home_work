@@ -112,7 +112,7 @@ ul {
 
 .order-link {
   min-width: 6.125rem;
-  padding: 10px 17px;
+  padding: 10px 15px;
   border-radius: 5px;
   background-color: #e25028;
   color: #fff;
@@ -161,14 +161,14 @@ ul {
   justify-content: space-between;
   padding-top: 10px; }
 
-.logo {
-  margin-left: 77px;
-  margin-right: 230px;
-  margin-top: 12px; }
+.header__logo {
+  padding-left: 77px;
+  padding-top: 2px;
+  margin-right: 215px; }
 
 .header__nav {
-  margin-top: 36px;
-  margin-right: 96px;
+  margin-top: 20px;
+  margin-right: 0px;
   width: 100%; }
 
 .nav__item {
@@ -179,9 +179,9 @@ ul {
     display: inline-block;
     vertical-align: middle;
     content: ' ';
-    width: 5px;
-    height: 5px;
-    border-radius: 2.5px;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
     background-color: #fff;
     margin: 0 12px; }
   .nav__item:last-child:after {
@@ -202,6 +202,10 @@ ul {
   .nav__link:hover {
     text-decoration: underline; }
 
+.header__btn {
+  margin-top: 23px;
+  margin-right: 80px; }
+
 .welcome {
   width: 100%;
   display: -webkit-box;
@@ -213,12 +217,13 @@ ul {
   position: relative; }
 
 .welcome__burger {
-  margin-left: 132px; }
+  margin-left: 132px;
+  margin-top: -25px; }
 
 .welcom__drops {
   position: absolute;
   left: 97px;
-  top: 46px; }
+  top: -29px; }
 
 .welcome__right {
   text-align: left;
@@ -229,7 +234,7 @@ ul {
   font-size: 72px;
   text-transform: uppercase;
   color: #f9b43b;
-  margin-top: 62px; }
+  margin-top: 25px; }
 
 .welcome__text {
   font-family: 'lifehack';
@@ -237,7 +242,7 @@ ul {
   color: #ffffff;
   letter-spacing: -0.025em;
   line-height: 0.95em;
-  margin-top: 22px; }
+  margin-top: 14px; }
 
 .page1__link {
   display: block;
@@ -292,24 +297,35 @@ ul {
 
 .title--2 {
   color: #2f3234;
-  text-align: center; }
+  text-align: center;
+  margin-top: 49px; }
+
+.content {
+  padding: 0 69px;
+  margin-top: 68px; }
 
 .content__list {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.content__pic {
+  min-height: 114px; }
 
 .content__title {
   font-family: 'lifehack';
-  font-size: 28.1px; }
+  font-size: 24px;
+  max-width: 200px; }
 
 .content__text {
   font-family: 'ubuntu';
   font-size: 14px;
-  font-weight: lighter; }
+  font-weight: lighter;
+  margin-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
