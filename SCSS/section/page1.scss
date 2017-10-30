@@ -9,8 +9,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .header {
@@ -84,6 +83,7 @@
 }
 
 .welcome__right {
+    text-align: left;
     margin-left: 15px;
 }
 
