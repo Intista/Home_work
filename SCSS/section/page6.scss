@@ -9,52 +9,39 @@
 
 .reviews__list {
     display: flex;
-    height: 50%;
+    height: 100%;
+    flex-wrap: wrap;
+    color: #ffffff;
 }
 
 .reviews__item {
-    height: 100%;
+    width: 25%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
     &:nth-child(1) {
         background-image: url('../image/page6/foto1.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     &:nth-child(2) {
         background-image: url('../image/page6/foto2.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     &:nth-child(3) {
         background-image: url('../image/page6/foto3.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     &:nth-child(4) {
         background-image: url('../image/page6/foto4.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
-}
-
-.reviews__item--2 {
-    &:nth-child(1) {
+    &:nth-child(5) {
         background-image: url('../image/page6/foto5.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
-    &:nth-child(2) {
+    &:nth-child(6) {
         background-image: url('../image/page6/foto6.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
-    &:nth-child(3) {
+    &:nth-child(7) {
         background-image: url('../image/page6/foto7.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
-    &:nth-child(4) {
+    &:nth-child(8) {
         background-image: url('../image/page6/foto8.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 }

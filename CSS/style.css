@@ -361,45 +361,34 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 50%; }
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: #ffffff; }
 
 .reviews__item {
-  height: 100%; }
+  width: 25%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
   .reviews__item:nth-child(1) {
-    background-image: url("../image/page6/foto1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; }
+    background-image: url("../image/page6/foto1.jpg"); }
   .reviews__item:nth-child(2) {
-    background-image: url("../image/page6/foto2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; }
+    background-image: url("../image/page6/foto2.jpg"); }
   .reviews__item:nth-child(3) {
-    background-image: url("../image/page6/foto3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; }
+    background-image: url("../image/page6/foto3.jpg"); }
   .reviews__item:nth-child(4) {
-    background-image: url("../image/page6/foto4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; }
-
-.reviews__item--2:nth-child(1) {
-  background-image: url("../image/page6/foto5.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.reviews__item--2:nth-child(2) {
-  background-image: url("../image/page6/foto6.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.reviews__item--2:nth-child(3) {
-  background-image: url("../image/page6/foto7.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.reviews__item--2:nth-child(4) {
-  background-image: url("../image/page6/foto8.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+    background-image: url("../image/page6/foto4.jpg"); }
+  .reviews__item:nth-child(5) {
+    background-image: url("../image/page6/foto5.jpg"); }
+  .reviews__item:nth-child(6) {
+    background-image: url("../image/page6/foto6.jpg"); }
+  .reviews__item:nth-child(7) {
+    background-image: url("../image/page6/foto7.jpg"); }
+  .reviews__item:nth-child(8) {
+    background-image: url("../image/page6/foto8.jpg"); }
 
 /*# sourceMappingURL=style.css.map */
