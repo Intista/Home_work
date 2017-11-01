@@ -15,11 +15,8 @@
 }
 
 .reviews__item {
-    position: relative;
     width: 25%;
     height: 50%;
-    text-align: left;
-    padding: 0 21px;
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(100%);
@@ -47,31 +44,35 @@
     &:nth-child(8) {
         background-image: url('../image/page6/foto1.jpg');
     }
+    &:hover .rewiews__hover {
+        opacity: 1;
+    }
+}
+
+.rewiews__hover {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    text-align: left;
+    padding: 0 21px;
     & h3 {
         font-family: 'Gagalin';
         font-size: 14px;
         text-transform: uppercase;
-        margin-top: 45px;
-        opacity: 0;
+        padding-top: 45px;
     }
     & p {
         font-family: 'Ubuntu';
         font-size: 14px;
         font-weight: lighter;
-        margin-top: 20px;
+        padding-top: 20px;
         line-height: 1.75em;
-        opacity: 0;
-    }
-    &:hover h3,
-    &:hover p,
-    &:hover .reviews__btn {
-        opacity: 1;
     }
 }
 
 .reviews__btn {
     margin-top: 17px;
-    opacity: 0;
 }
 
 .reviews__link {

@@ -94,7 +94,7 @@
 }
 
 .title {
-    font-family: 'gagalin';
+    font-family: 'Gagalin';
     font-size: 72px;
     text-transform: uppercase;
     color: #f9b43b;
@@ -102,7 +102,7 @@
 }
 
 .welcome__text {
-    font-family: 'lifehack';
+    font-family: 'Lifehack';
     font-size: 65px;
     color: #ffffff;
     letter-spacing: -0.025em;
@@ -129,31 +129,42 @@
 
 .pages__nav {
     position: fixed;
-    right: 152px;
-    top: 91px;
+    right: 179px;
+    top: 96px;
 }
 
 .pages__link {
     display: block;
     position: relative;
-    width: 14px;
-    height: 14px;
+    background: #ffffff;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
-    border: 1px solid #ffffff;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+    &:active {
+        &:before {
+            opacity: 1;
+        }
+    }
 }
 
 .pages__link:before {
     content: "";
     display: block;
     position: absolute;
-    left: 0;
+    width: 16px;
+    height: 16px;
+    left: -5px;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
-    background: #ffffff;
-    width: 6px;
-    height: 6px;
     border-radius: 50%;
+    border: 1px solid #ffffff;
+    opacity: 0;
 }
