@@ -5,7 +5,7 @@
     background-size: cover;
 }
 
-.page1__conteiner {
+.page1__container {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -19,15 +19,15 @@
     padding-top: 10px;
 }
 
-.logo {
-    margin-left: 77px;
-    margin-right: 230px;
-    margin-top: 12px;
+.header__logo {
+    padding-left: 77px;
+    padding-top: 2px;
+    margin-right: 215px;
 }
 
 .header__nav {
-    margin-top: 36px;
-    margin-right: 96px;
+    margin-top: 20px;
+    margin-right: 0px;
     width: 100%;
 }
 
@@ -39,7 +39,7 @@
         display: inline-block;
         vertical-align: middle;
         content: ' ';
-        @include circle(5px,
+        @include circle(4px,
         #fff);
         margin: 0 12px;
     }
@@ -63,6 +63,11 @@
     }
 }
 
+.header__btn {
+    margin-top: 23px;
+    margin-right: 80px;
+}
+
 .welcome {
     width: 100%;
     display: flex;
@@ -74,12 +79,13 @@
 
 .welcome__burger {
     margin-left: 132px;
+    margin-top: -25px;
 }
 
 .welcom__drops {
     position: absolute;
     left: 97px;
-    top: 46px;
+    top: -29px;
 }
 
 .welcome__right {
@@ -92,7 +98,7 @@
     font-size: 72px;
     text-transform: uppercase;
     color: #f9b43b;
-    margin-top: 62px;
+    margin-top: 25px;
 }
 
 .welcome__text {
@@ -101,7 +107,7 @@
     color: #ffffff;
     letter-spacing: -0.025em;
     line-height: 0.95em;
-    margin-top: 22px;
+    margin-top: 14px;
 }
 
 .page1__link {

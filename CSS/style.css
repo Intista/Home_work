@@ -1,25 +1,25 @@
 @font-face {
   font-family: 'Ubuntu';
   src: url("../fonts/ubuntu/ubuntu-b-webfont.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal; }
+  font-weight: bolder;
+  font-style: bolder; }
 
 @font-face {
   font-family: 'Ubuntu';
   src: url("../fonts/ubuntu/ubuntu-light-webfont.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal; }
+  font-weight: lighter;
+  font-style: lighter; }
 
 @font-face {
   font-family: 'Ubuntu';
   src: url("../fonts/ubuntu/ubuntu-medium-webfont.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal; }
+  font-weight: bold;
+  font-style: bold; }
 
 @font-face {
   font-family: 'Ubuntu';
   src: url("../fonts/ubuntu/ubuntu-regular-webfont.woff2") format("woff2");
-  font-weight: 500;
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
@@ -60,6 +60,19 @@ ul {
   padding: 0;
   list-style: none; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal; }
+
+p {
+  margin: 0px;
+  padding: 0px; }
+
 .visuallyhidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -74,9 +87,8 @@ ul {
   overflow: hidden; }
 
 .wrapper {
-  width: 1100px;
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
   position: relative; }
 
 .maincontent {
@@ -84,7 +96,7 @@ ul {
   min-height: 650px; }
 
 .container {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -112,7 +124,7 @@ ul {
 
 .order-link {
   min-width: 6.125rem;
-  padding: 10px 17px;
+  padding: 10px 15px;
   border-radius: 5px;
   background-color: #e25028;
   color: #fff;
@@ -133,7 +145,7 @@ ul {
   background-position: 50%;
   background-size: cover; }
 
-.page1__conteiner {
+.page1__container {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -161,14 +173,14 @@ ul {
   justify-content: space-between;
   padding-top: 10px; }
 
-.logo {
-  margin-left: 77px;
-  margin-right: 230px;
-  margin-top: 12px; }
+.header__logo {
+  padding-left: 77px;
+  padding-top: 2px;
+  margin-right: 215px; }
 
 .header__nav {
-  margin-top: 36px;
-  margin-right: 96px;
+  margin-top: 20px;
+  margin-right: 0px;
   width: 100%; }
 
 .nav__item {
@@ -179,9 +191,9 @@ ul {
     display: inline-block;
     vertical-align: middle;
     content: ' ';
-    width: 5px;
-    height: 5px;
-    border-radius: 2.5px;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
     background-color: #fff;
     margin: 0 12px; }
   .nav__item:last-child:after {
@@ -202,6 +214,10 @@ ul {
   .nav__link:hover {
     text-decoration: underline; }
 
+.header__btn {
+  margin-top: 23px;
+  margin-right: 80px; }
+
 .welcome {
   width: 100%;
   display: -webkit-box;
@@ -213,12 +229,13 @@ ul {
   position: relative; }
 
 .welcome__burger {
-  margin-left: 132px; }
+  margin-left: 132px;
+  margin-top: -25px; }
 
 .welcom__drops {
   position: absolute;
   left: 97px;
-  top: 46px; }
+  top: -29px; }
 
 .welcome__right {
   text-align: left;
@@ -229,7 +246,7 @@ ul {
   font-size: 72px;
   text-transform: uppercase;
   color: #f9b43b;
-  margin-top: 62px; }
+  margin-top: 25px; }
 
 .welcome__text {
   font-family: 'lifehack';
@@ -237,7 +254,7 @@ ul {
   color: #ffffff;
   letter-spacing: -0.025em;
   line-height: 0.95em;
-  margin-top: 22px; }
+  margin-top: 14px; }
 
 .page1__link {
   display: block;
@@ -292,24 +309,122 @@ ul {
 
 .title--2 {
   color: #2f3234;
-  text-align: center; }
+  text-align: center;
+  margin-top: 49px; }
+
+.content {
+  padding: 0 69px;
+  margin-top: 68px; }
 
 .content__list {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center; }
 
-.content__title {
+.content__item {
+  width: 321px; }
+
+.content__pic {
+  min-height: 120px; }
+
+.content__item h3 {
+  display: inline-block;
   font-family: 'lifehack';
-  font-size: 28.1px; }
+  font-size: 24px;
+  line-height: 1.2em;
+  width: 300px; }
 
-.content__text {
+.content__item p {
+  display: inline-block;
   font-family: 'ubuntu';
   font-size: 14px;
-  font-weight: lighter; }
+  font-weight: lighter;
+  line-height: 1.7em;
+  margin-top: 13px;
+  width: 300px; }
+
+.page6__container {
+  background: #909090;
+  height: 100%; }
+
+.reviews {
+  height: 100%; }
+
+.reviews__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: #ffffff; }
+
+.reviews__item {
+  position: relative;
+  width: 25%;
+  height: 50%;
+  text-align: left;
+  padding: 0 21px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  .reviews__item:nth-child(1) {
+    background-image: url("../image/page6/foto8.jpg"); }
+  .reviews__item:nth-child(2) {
+    background-image: url("../image/page6/foto6.jpg"); }
+  .reviews__item:nth-child(3) {
+    background-image: url("../image/page6/foto4.jpg"); }
+  .reviews__item:nth-child(4) {
+    background-image: url("../image/page6/foto2.jpg"); }
+  .reviews__item:nth-child(5) {
+    background-image: url("../image/page6/foto7.jpg"); }
+  .reviews__item:nth-child(6) {
+    background-image: url("../image/page6/foto5.jpg"); }
+  .reviews__item:nth-child(7) {
+    background-image: url("../image/page6/foto3.jpg"); }
+  .reviews__item:nth-child(8) {
+    background-image: url("../image/page6/foto1.jpg"); }
+  .reviews__item h3 {
+    font-family: 'Gagalin';
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 45px;
+    opacity: 0; }
+  .reviews__item p {
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 20px;
+    line-height: 1.75em;
+    opacity: 0; }
+  .reviews__item:hover h3 {
+    opacity: 1; }
+  .reviews__item:hover p {
+    opacity: 1; }
+  .reviews__item:hover .reviews__btn {
+    opacity: 1; }
+
+.reviews__btn {
+  margin-top: 17px;
+  opacity: 0; }
+
+.reviews__link {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #2f3234;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,90 @@
+.page6__container {
+    background: #909090;
+    height: 100%;
+}
+
+.reviews {
+    height: 100%;
+}
+
+.reviews__list {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+
+.reviews__item {
+    position: relative;
+    width: 25%;
+    height: 50%;
+    text-align: left;
+    padding: 0 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    &:nth-child(1) {
+        background-image: url('../image/page6/foto8.jpg');
+    }
+    &:nth-child(2) {
+        background-image: url('../image/page6/foto6.jpg');
+    }
+    &:nth-child(3) {
+        background-image: url('../image/page6/foto4.jpg');
+    }
+    &:nth-child(4) {
+        background-image: url('../image/page6/foto2.jpg');
+    }
+    &:nth-child(5) {
+        background-image: url('../image/page6/foto7.jpg');
+    }
+    &:nth-child(6) {
+        background-image: url('../image/page6/foto5.jpg');
+    }
+    &:nth-child(7) {
+        background-image: url('../image/page6/foto3.jpg');
+    }
+    &:nth-child(8) {
+        background-image: url('../image/page6/foto1.jpg');
+    }
+    & h3 {
+        font-family: 'Gagalin';
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-top: 45px;
+        opacity: 0;
+    }
+    & p {
+        font-family: 'Ubuntu';
+        font-size: 14px;
+        font-weight: lighter;
+        margin-top: 20px;
+        line-height: 1.75em;
+        opacity: 0;
+    }
+    &:hover h3 {
+        opacity: 1;
+    }
+    &:hover p {
+        opacity: 1;
+    }
+    &:hover .reviews__btn {
+        opacity: 1;
+    }
+}
+
+.reviews__btn {
+    margin-top: 17px;
+    opacity: 0;
+}
+
+.reviews__link {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #2f3234;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
