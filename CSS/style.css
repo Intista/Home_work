@@ -1,25 +1,25 @@
 @font-face {
   font-family: 'Ubuntu';
   src: url("../fonts/ubuntu/ubuntu-b-webfont.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal; }
+  font-weight: bolder;
+  font-style: bolder; }
 
 @font-face {
   font-family: 'Ubuntu';
   src: url("../fonts/ubuntu/ubuntu-light-webfont.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal; }
+  font-weight: lighter;
+  font-style: lighter; }
 
 @font-face {
   font-family: 'Ubuntu';
   src: url("../fonts/ubuntu/ubuntu-medium-webfont.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal; }
+  font-weight: bold;
+  font-style: bold; }
 
 @font-face {
   font-family: 'Ubuntu';
   src: url("../fonts/ubuntu/ubuntu-regular-webfont.woff2") format("woff2");
-  font-weight: 500;
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
@@ -368,27 +368,63 @@ p {
   color: #ffffff; }
 
 .reviews__item {
+  position: relative;
   width: 25%;
   height: 50%;
+  text-align: left;
+  padding: 0 21px;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
   .reviews__item:nth-child(1) {
-    background-image: url("../image/page6/foto1.jpg"); }
-  .reviews__item:nth-child(2) {
-    background-image: url("../image/page6/foto2.jpg"); }
-  .reviews__item:nth-child(3) {
-    background-image: url("../image/page6/foto3.jpg"); }
-  .reviews__item:nth-child(4) {
-    background-image: url("../image/page6/foto4.jpg"); }
-  .reviews__item:nth-child(5) {
-    background-image: url("../image/page6/foto5.jpg"); }
-  .reviews__item:nth-child(6) {
-    background-image: url("../image/page6/foto6.jpg"); }
-  .reviews__item:nth-child(7) {
-    background-image: url("../image/page6/foto7.jpg"); }
-  .reviews__item:nth-child(8) {
     background-image: url("../image/page6/foto8.jpg"); }
+  .reviews__item:nth-child(2) {
+    background-image: url("../image/page6/foto6.jpg"); }
+  .reviews__item:nth-child(3) {
+    background-image: url("../image/page6/foto4.jpg"); }
+  .reviews__item:nth-child(4) {
+    background-image: url("../image/page6/foto2.jpg"); }
+  .reviews__item:nth-child(5) {
+    background-image: url("../image/page6/foto7.jpg"); }
+  .reviews__item:nth-child(6) {
+    background-image: url("../image/page6/foto5.jpg"); }
+  .reviews__item:nth-child(7) {
+    background-image: url("../image/page6/foto3.jpg"); }
+  .reviews__item:nth-child(8) {
+    background-image: url("../image/page6/foto1.jpg"); }
+  .reviews__item h3 {
+    font-family: 'Gagalin';
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 45px;
+    opacity: 0; }
+  .reviews__item p {
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 20px;
+    line-height: 1.75em;
+    opacity: 0; }
+  .reviews__item:hover h3 {
+    opacity: 1; }
+  .reviews__item:hover p {
+    opacity: 1; }
+  .reviews__item:hover .reviews__btn {
+    opacity: 1; }
+
+.reviews__btn {
+  margin-top: 17px;
+  opacity: 0; }
+
+.reviews__link {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #2f3234;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
