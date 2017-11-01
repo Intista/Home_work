@@ -1,0 +1,62 @@
+.page4 {
+    background-image: url('../image/page4/background.jpg');
+}
+
+.page4__container {
+    height: 100%;
+}
+
+.team {
+    width: 45%;
+    height: 100%;
+    background-color: rgba(#3e4042, 0.9);
+    margin-left: auto;
+    text-align: left;
+}
+
+.team__list {}
+
+.team__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team__name {
+    font-family: 'Gagalin';
+    font-size: 14px;
+    width: 100%;
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-left: 10px solid #f9b43b;
+        border-bottom: 10px solid #f9b43b;
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        transform: rotate(-45deg);
+        margin-right: 10px;
+    }
+}
+
+.team__img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.team__avatar {
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.team__desc {
+    width: 210px;
+}

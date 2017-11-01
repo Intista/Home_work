@@ -349,6 +349,65 @@ p {
   margin-top: 13px;
   width: 300px; }
 
+.page4 {
+  background-image: url("../image/page4/background.jpg"); }
+
+.page4__container {
+  height: 100%; }
+
+.team {
+  width: 45%;
+  height: 100%;
+  background-color: rgba(62, 64, 66, 0.9);
+  margin-left: auto;
+  text-align: left; }
+
+.team__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.team__name {
+  font-family: 'Gagalin';
+  font-size: 14px;
+  width: 100%; }
+  .team__name:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #f9b43b;
+    border-bottom: 10px solid #f9b43b;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-right: 10px; }
+
+.team__img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative; }
+
+.team__avatar {
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  bottom: 0;
+  right: 0;
+  margin: auto; }
+
+.team__desc {
+  width: 210px; }
+
 .page6__container {
   background: #909090;
   height: 100%; }
@@ -406,10 +465,8 @@ p {
     margin-top: 20px;
     line-height: 1.75em;
     opacity: 0; }
-  .reviews__item:hover h3 {
-    opacity: 1; }
-  .reviews__item:hover p {
-    opacity: 1; }
+  .reviews__item:hover h3,
+  .reviews__item:hover p,
   .reviews__item:hover .reviews__btn {
     opacity: 1; }
 
