@@ -8,12 +8,12 @@
 .title--2 {
     color: #2f3234;
     text-align: center;
-    margin-top: 49px;
+    margin-top: rem(49px);
 }
 
 .content {
-    padding: 0 69px;
-    margin-top: 68px;
+    padding: 0 rem(69px);
+    margin-top: rem(68px);
 }
 
 .content__list {
@@ -23,27 +23,27 @@
 }
 
 .content__item {
-    width: 321px;
+    width: rem(321px);
 }
 
 .content__pic {
-    min-height: 120px;
+    min-height: rem(120px);
 }
 
 .content__item h3 {
     display: inline-block;
     font-family: 'Lifehack';
-    font-size: 24px;
+    font-size: rem(24px);
     line-height: 1.2em;
-    width: 300px;
+    width: rem(300px);
 }
 
 .content__item p {
     display: inline-block;
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: lighter;
     line-height: 1.7em;
-    margin-top: 13px;
-    width: 300px;
+    margin-top: rem(13px);
+    width: rem(300px);
 }

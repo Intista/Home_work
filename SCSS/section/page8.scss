@@ -1,0 +1,50 @@
+.page8 {
+    background: url('../image/page8/background.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.container8 {
+    justify-content: space-between;
+}
+
+.map {
+    height: 91%;
+}
+
+.map__img {
+    height: 100%;
+    width: 100%;
+}
+
+.footer {
+    height: 9%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu';
+    font-weight: lighter;
+    font-size: rem(14px);
+    color: #ffffff;
+}
+
+.footer__section {
+    padding: rem(10px) rem(80px);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.footer__phone-link {
+    margin-right: rem(5px);
+    font-weight: bold;
+    color: $orange;
+    text-decoration: none;
+}
+
+.footer__section-right {
+    text-align: right;
+}
+
+.socials {
+    display: inline-block;
+}

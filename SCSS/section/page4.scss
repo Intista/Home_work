@@ -1,62 +1,105 @@
 .page4 {
     background-image: url('../image/page4/background.jpg');
-}
-
-.page4__container {
-    height: 100%;
+    background-size: cover;
+    position: relative;
 }
 
 .team {
-    width: 45%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 49.3%;
     height: 100%;
     background-color: rgba(#3e4042, 0.9);
-    margin-left: auto;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
     text-align: left;
+    padding-left: rem(80px);
+    padding-top: rem(40px);
 }
 
-.team__list {}
+.team__accordeon {
+    margin-top: rem(59px);
+}
 
 .team__item {
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: rem(32px);
 }
 
 .team__name {
     font-family: 'Gagalin';
-    font-size: 14px;
-    width: 100%;
+    font-size: rem(14px);
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
     &:before {
         content: "";
-        display: inline-block;
-        width: 0;
         height: 0;
-        border-left: 10px solid #f9b43b;
-        border-bottom: 10px solid #f9b43b;
-        border-right: 10px solid transparent;
-        border-top: 10px solid transparent;
-        transform: rotate(-45deg);
-        margin-right: 10px;
+        width: 0;
+        border: rem(5px) solid transparent;
+        border-top-color: $yellow;
+        border-bottom-width: rem(0px);
+        margin-right: rem(10px);
     }
 }
 
+.team__content {
+    display: flex;
+    display: none;
+    margin-top: rem(13px);
+    margin-bottom: rem(40px);
+}
+
 .team__img {
-    height: 100px;
-    width: 100px;
+    height: rem(100px);
+    min-width: rem(100px);
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+    margin: 0 rem(17px);
 }
 
 .team__avatar {
-    height: 100px;
+    height: rem(100px);
     position: absolute;
     top: 0;
-    left: -20px;
+    left: rem(-20px);
     bottom: 0;
     right: 0;
     margin: auto;
 }
 
-.team__desc {
-    width: 210px;
+.team__about {
+    padding-left: rem(5px);
+    max-width: rem(230px);
+}
+
+.team__title {
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-size: rem(14px);
+    margin-bottom: rem(10px);
+}
+
+.team__text {
+    font-family: 'Ubuntu';
+    font-weight: lighter;
+    font-size: rem(14px);
+    line-height: 1.7;
+}
+
+.team__item--active {
+    .team__name {
+        color: #f9b43b;
+        &:before {
+            transform: rotate(-180deg);
+        }
+    }
+    .team__content {
+        display: flex;
+    }
 }

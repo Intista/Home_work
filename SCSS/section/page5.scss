@@ -1,0 +1,108 @@
+.page5 {
+    background: url('../image/page5/background.jpg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.page5__container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.page5__title {
+    position: absolute;
+    top: 10%;
+    left: 9%;
+    color: #ffffff;
+}
+
+.menu__accordeon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    &:before {
+        content: "";
+        display: table;
+    }
+}
+
+.menu__item {
+    float: left;
+    height: 100%;
+    &:nth-child(1) {
+        background: url('../image/page5/meat.jpg');
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+    }
+    &:nth-child(2) {
+        background: url('../image/page5/vegetarian.jpg');
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+    }
+    &:nth-child(3) {
+        background: url('../image/page5/diet.jpg');
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+    }
+    .menu__link {
+        width: 5rem;
+        display: block;
+        height: 100%;
+        float: left;
+        text-decoration: none;
+        position: relative;
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.menu__link-text {
+    display: block;
+    width: initial;
+    font-family: 'Gagalin';
+    font-size: rem(40px);
+    text-align: center;
+    white-space: nowrap;
+    color: #ffffff;
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    width: 100vh;
+    left: 50%;
+    top: 100%;
+    margin-top: -1.25rem;
+}
+
+.menu__content {
+    height: 100%;
+    float: left;
+    width: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.menu__content--active {
+    width: rem(540px);
+}
+
+.menu__text {
+    font-family: 'Ubuntu';
+    font-weight: lighter;
+    font-size: rem(14px);
+    color: #ffffff;
+    padding: 3.75rem 1.875rem;
+    width: 100%;
+    line-height: 1.8;
+    text-align: left;
+}
