@@ -60,6 +60,9 @@
     text-align: left;
     padding: 0 8%;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     & h3 {
         font-family: 'Gagalin';
         font-size: rem(14px);
@@ -77,12 +80,21 @@
         padding: 0 12%;
         text-align: center;
         & h3 {
-            font-size: 2.3vmin;
+            font-size: 3.6vmin;
             padding-top: 3%;
         }
         & p {
-            font-size: 2.3vmin;
+            font-size: 3.6vmin;
             padding-top: 3%;
+        }
+    }
+    @include phones {
+        & h3 {
+            font-size: rem(14px);
+            margin-bottom: 10%;
+        }
+        & p {
+            display: none;
         }
     }
 }
@@ -104,6 +116,6 @@
     text-decoration: none;
     text-transform: uppercase;
     @include tablets {
-        font-size: 2.3vmin;
+        font-size: 3.6vmin;
     }
 }

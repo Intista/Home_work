@@ -22,7 +22,10 @@
     @include tablets {
         flex-direction: column;
         align-items: center;
-        padding: 0 20%;
+        padding: 0 16%;
+    }
+    @include phones {
+        padding: 0;
     }
 }
 
@@ -37,6 +40,9 @@
 .form__row {
     display: flex;
     margin-bottom: rem(15px);
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .form__elem {
@@ -70,6 +76,7 @@
 }
 
 .form__input-textarea {
+    overflow: hidden;
     height: rem(110px);
     resize: none;
 }

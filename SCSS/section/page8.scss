@@ -26,13 +26,17 @@
     font-weight: lighter;
     font-size: rem(14px);
     color: #ffffff;
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer__section {
     padding: 1% 5%;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
 }
 
 .footer__phone-link {
