@@ -20,7 +20,7 @@ html {
 
 .container {
     height: 100%;
-    width: 100%;
+    width: 95%;
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
@@ -32,7 +32,6 @@ html {
 .page {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.31);
-    min-width: 940px;
     min-height: 650px;
 }
 

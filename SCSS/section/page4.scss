@@ -16,16 +16,46 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding-left: rem(80px);
-    padding-top: rem(40px);
+    padding-left: 6%;
+    padding-top: 3%;
+    @include tablets {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        justify-content: flex-start;
+    }
 }
 
 .team__accordeon {
     margin-top: rem(59px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @include tablets {
+        align-items: center;
+    }
 }
 
 .team__item {
-    margin-bottom: rem(32px);
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    @include tablets {
+        margin-bottom: 3%;
+        align-items: center;
+    }
+}
+
+.team__item--active {
+    .team__name {
+        color: #f9b43b;
+        &:before {
+            transform: rotate(-180deg);
+        }
+    }
+    .team__content {
+        display: flex;
+    }
 }
 
 .team__name {
@@ -35,15 +65,24 @@
     text-transform: uppercase;
     text-decoration: none;
     display: flex;
-    align-items: center;
+    position: relative;
+    padding-left: rem(19px);
+    @include tablets {
+        font-size: rem(25px);
+    }
     &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
         content: "";
         height: 0;
         width: 0;
         border: rem(5px) solid transparent;
         border-top-color: $yellow;
         border-bottom-width: rem(0px);
-        margin-right: rem(10px);
     }
 }
 
@@ -51,7 +90,12 @@
     display: flex;
     display: none;
     margin-top: rem(13px);
-    margin-bottom: rem(40px);
+    margin-bottom: 2%;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2%;
+    }
 }
 
 .team__img {
@@ -75,7 +119,10 @@
 
 .team__about {
     padding-left: rem(5px);
-    max-width: rem(230px);
+    max-width: 40%;
+    @include tablets {
+        max-width: 75%;
+    }
 }
 
 .team__title {
@@ -83,6 +130,9 @@
     font-weight: bold;
     font-size: rem(14px);
     margin-bottom: rem(10px);
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .team__text {
@@ -90,16 +140,7 @@
     font-weight: lighter;
     font-size: rem(14px);
     line-height: 1.7;
-}
-
-.team__item--active {
-    .team__name {
-        color: #f9b43b;
-        &:before {
-            transform: rotate(-180deg);
-        }
-    }
-    .team__content {
-        display: flex;
+    @include tablets {
+        text-align: center;
     }
 }

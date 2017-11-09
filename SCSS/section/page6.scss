@@ -16,6 +16,10 @@
 .reviews__item {
     width: 25%;
     height: 50%;
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(100%);
@@ -54,33 +58,52 @@
     background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     text-align: left;
-    padding: 0 21px;
+    padding: 0 8%;
+    overflow: auto;
     & h3 {
         font-family: 'Gagalin';
-        font-size: 14px;
+        font-size: rem(14px);
         text-transform: uppercase;
-        padding-top: 45px;
+        padding-top: 20%;
     }
     & p {
         font-family: 'Ubuntu';
-        font-size: 14px;
+        font-size: rem(14px);
         font-weight: lighter;
-        padding-top: 20px;
+        padding-top: 8%;
         line-height: 1.75em;
+    }
+    @include tablets {
+        padding: 0 12%;
+        text-align: center;
+        & h3 {
+            font-size: 2.3vmin;
+            padding-top: 3%;
+        }
+        & p {
+            font-size: 2.3vmin;
+            padding-top: 3%;
+        }
     }
 }
 
 .reviews__btn {
-    margin-top: 17px;
+    padding-top: 7%;
+    @include tablets {
+        padding-top: 3%;
+    }
 }
 
 .reviews__link {
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: rem(10px) rem(15px);
+    border-radius: rem(5px);
     background: #2f3234;
     color: #ffffff;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: normal;
     text-decoration: none;
     text-transform: uppercase;
+    @include tablets {
+        font-size: 2.3vmin;
+    }
 }

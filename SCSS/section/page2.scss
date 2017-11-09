@@ -5,15 +5,22 @@
     background-size: cover;
 }
 
+.page2__container {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 .title--2 {
+    width: 100%;
     color: #2f3234;
     text-align: center;
-    margin-top: rem(49px);
+    margin-top: 5%;
 }
 
 .content {
-    padding: 0 rem(69px);
-    margin-top: rem(68px);
+    width: 100%;
+    padding: 0 6%;
+    margin-top: 6%;
 }
 
 .content__list {
@@ -23,7 +30,8 @@
 }
 
 .content__item {
-    width: rem(321px);
+    padding: 0 1%;
+    max-width: rem(350px);
 }
 
 .content__pic {
@@ -35,7 +43,8 @@
     font-family: 'Lifehack';
     font-size: rem(24px);
     line-height: 1.2em;
-    width: rem(300px);
+    width: 100%;
+    min-height: rem(56px);
 }
 
 .content__item p {
@@ -45,5 +54,5 @@
     font-weight: lighter;
     line-height: 1.7em;
     margin-top: rem(13px);
-    width: rem(300px);
+    width: 100%;
 }

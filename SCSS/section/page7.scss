@@ -18,12 +18,20 @@
 
 .form__content {
     display: flex;
-    padding: 0 rem(70px);
+    padding: 0 6%;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20%;
+    }
 }
 
 .form__section {
     width: 50%;
     padding: 0 rem(10px);
+    @include tablets {
+        width: 100%;
+    }
 }
 
 .form__row {
