@@ -3,22 +3,23 @@
     background-size: cover;
 }
 
-.container8 {
+.page8__container {
     justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
 }
 
 .map {
-    max-height: 91%;
     width: 100%;
     overflow: hidden;
 }
 
 .map__img {
-    height: 100%;
+    min-height: 100%;
+    min-width: 100vw;
 }
 
 .footer {
-    height: 9%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -33,28 +34,48 @@
 }
 
 .footer__section {
-    padding: 1% 5%;
     display: flex;
+}
+
+.footer__section-left {
+    display: flex;
+    text-align: left;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    padding: rem(20px) 0;
+    padding-left: rem(80px);
+    @include phones {
+        text-align: center;
+        padding-left: 0;
+    }
 }
 
 .footer__phone-link {
-    margin-right: rem(5px);
+    margin-left: rem(5px);
     font-weight: bold;
     color: $orange;
     text-decoration: none;
 }
 
 .footer__section-right {
-    text-align: right;
+    align-items: center;
+    justify-content: flex-end;
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .socials {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    margin-right: rem(83px);
+    @include phones {
+        margin-right: 0;
+        justify-content: center;
+        margin-bottom: rem(15px);
+    }
 }
 
 .socials__item {
-    display: inline-block;
+    margin-left: 20px;
 }

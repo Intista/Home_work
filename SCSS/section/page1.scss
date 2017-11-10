@@ -34,6 +34,7 @@
 }
 
 .nav__list {
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -126,7 +127,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 0 20%;
     }
 }
 
@@ -134,36 +134,41 @@
 .welcome__right {
     float: left;
     width: 50%;
+    padding: 0 1%;
     @include tablets() {
         float: none;
-        width: auto;
     }
 }
 
 .welcome__left {
-    position: relative;
     text-align: right;
     align-items: center;
+    @include tablets {
+        text-align: center;
+        width: 43vw;
+    }
+    @include phones {
+        width: 64vw;
+    }
 }
 
 .welcome__burger {
-    margin-top: rem(115px);
+    display: inline-block;
+    vertical-align: middle;
     max-width: 100%;
     max-height: 100%;
-}
-
-.welcom__drops {
-    position: absolute;
-    max-height: 100%;
-    max-width: 100%;
 }
 
 .welcome__right {
+    display: flex;
+    flex-direction: column;
     text-align: left;
-    align-items: center;
+    justify-content: center;
     padding-top: rem(30px);
     @include tablets() {
+        text-align: center;
         padding-top: 0;
+        width: auto;
     }
 }
 
@@ -171,8 +176,15 @@
     font-family: 'Gagalin';
     font-size: rem(72px);
     text-transform: uppercase;
+    white-space: nowrap;
     color: #f9b43b;
     margin-top: rem(25px);
+    @include tablets() {
+        font-size: 8vw;
+    }
+    @include phones {
+        font-size: 12vw;
+    }
 }
 
 .welcome__text {
@@ -181,6 +193,13 @@
     color: #ffffff;
     line-height: 0.95em;
     margin-top: rem(14px);
+    @include tablets() {
+        font-size: 6.5vw;
+        margin-top: 0;
+    }
+    @include phones {
+        font-size: 10vw;
+    }
 }
 
 .page1__link {
