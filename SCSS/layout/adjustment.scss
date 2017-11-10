@@ -18,6 +18,13 @@ html {
     min-height: 650px;
 }
 
+.page {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.31);
+    min-height: 650px;
+    overflow: hidden;
+}
+
 .container {
     height: 100%;
     width: 95%;
@@ -27,12 +34,6 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.page {
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.31);
-    min-height: 650px;
 }
 
 .order-link {
