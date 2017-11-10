@@ -75,11 +75,10 @@
 
 .menu__link-text {
     display: block;
-    width: initial;
+    width: 100vh;
     font-family: 'Gagalin';
     font-size: rem(40px);
     text-align: center;
-    vertical-align: middle;
     white-space: nowrap;
     color: #ffffff;
     position: absolute;
@@ -90,6 +89,8 @@
     margin-top: -1.25rem;
     @include tablets {
         text-align: left;
+        width: auto;
+        ;
     }
 }
 
@@ -117,4 +118,14 @@
     width: 100%;
     line-height: 1.8;
     text-align: left;
+}
+
+.socials__icon {
+    fill: #5e5e5e;
+    max-height: 20px;
+    max-width: 22px;
+    ;
+    &:hover {
+        fill: #ffffff;
+    }
 }
