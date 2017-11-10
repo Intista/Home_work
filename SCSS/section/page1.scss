@@ -22,7 +22,6 @@
 .header__logo {
     padding-left: 7%;
     padding-top: rem(2px);
-    margin-right: 20%;
 }
 
 .header__nav {
@@ -37,6 +36,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .nav__item {
@@ -54,7 +54,7 @@
         height: 4px;
         border-radius: 50%;
         background: #ffffff;
-        margin: 0 14px;
+        margin: 0 1vw;
     }
 }
 
@@ -75,9 +75,9 @@
 
 .header__btn {
     margin-right: 7%;
+    margin-left: 1%;
     display: flex;
     align-items: center;
-    margin-left: auto;
 }
 
 .hamburger-link {
