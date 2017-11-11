@@ -784,8 +784,8 @@ p {
 
 .socials__icon {
   fill: #5e5e5e;
-  max-height: 20px;
-  max-width: 22px; }
+  max-height: 1.25rem;
+  max-width: 1.375rem; }
   .socials__icon:hover {
     fill: #ffffff; }
 
@@ -872,13 +872,13 @@ p {
     line-height: 1.75em; }
   @media screen and (max-width: 768px) {
     .rewiews__hover {
-      padding: 0 12%;
+      padding: 0 9%;
       text-align: center; }
       .rewiews__hover h3 {
-        font-size: 3.6vmin;
+        font-size: 2.6vw;
         padding-top: 3%; }
       .rewiews__hover p {
-        font-size: 3.6vmin;
+        font-size: 2.6vw;
         padding-top: 3%; } }
   @media screen and (max-width: 480px) {
     .rewiews__hover h3 {
@@ -904,7 +904,7 @@ p {
   text-transform: uppercase; }
   @media screen and (max-width: 768px) {
     .reviews__link {
-      font-size: 3.6vmin; } }
+      font-size: 2.6vw; } }
 
 .page7 {
   background: url("../image/page7/background.jpg") center center no-repeat;

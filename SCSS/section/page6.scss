@@ -79,14 +79,14 @@
         line-height: 1.75em;
     }
     @include tablets {
-        padding: 0 12%;
+        padding: 0 9%;
         text-align: center;
         & h3 {
-            font-size: 3.6vmin;
+            font-size: 2.6vw;
             padding-top: 3%;
         }
         & p {
-            font-size: 3.6vmin;
+            font-size: 2.6vw;
             padding-top: 3%;
         }
     }
@@ -118,6 +118,6 @@
     text-decoration: none;
     text-transform: uppercase;
     @include tablets {
-        font-size: 3.6vmin;
+        font-size: 2.6vw;
     }
 }

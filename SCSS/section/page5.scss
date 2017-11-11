@@ -122,8 +122,8 @@
 
 .socials__icon {
     fill: #5e5e5e;
-    max-height: 20px;
-    max-width: 22px;
+    max-height: rem(20px);
+    max-width: rem(22px);
     ;
     &:hover {
         fill: #ffffff;
