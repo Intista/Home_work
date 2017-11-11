@@ -16,41 +16,51 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: rem(10px);
 }
 
 .header__logo {
-    padding-left: 77px;
-    padding-top: 2px;
-    margin-right: 215px;
+    padding-left: 7%;
+    padding-top: rem(2px);
 }
 
 .header__nav {
-    margin-top: 20px;
-    margin-right: 0px;
+    margin-top: rem(23px);
     width: 100%;
+    @include tablets {
+        display: none;
+    }
+}
+
+.nav__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .nav__item {
-    display: inline-block;
-    vertical-align: middle;
     white-space: nowrap;
-    &:after {
-        display: inline-block;
-        vertical-align: middle;
-        content: ' ';
-        @include circle(4px,
-        #fff);
-        margin: 0 12px;
+    &:last-child {
+        margin-right: 0;
+        &:after {
+            display: none;
+        }
     }
-    &:last-child:after {
-        display: none;
+    &:after {
+        display: inline-flex;
+        content: "";
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #ffffff;
+        margin: 0 1vw;
     }
 }
 
 .nav__link {
     color: #ffffff;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
     line-height: 1.42;
     text-transform: uppercase;
@@ -64,96 +74,147 @@
 }
 
 .header__btn {
-    margin-top: 23px;
-    margin-right: 80px;
+    margin-right: 7%;
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-link {
+    vertical-align: middle;
+    position: relative;
+    height: rem(22px);
+    align-items: center;
+    margin-left: rem(30px);
+    display: none;
+    @include tablets() {
+        display: flex;
+    }
+}
+
+.hamburger-link__bars {
+    &,
+    &:before,
+    &:after {
+        background: #fff;
+        width: rem(24px);
+        height: rem(5px);
+        border-radius: rem(3px);
+    }
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+    }
+    &:before {
+        top: 0;
+    }
+    &:after {
+        bottom: 0;
+    }
 }
 
 .welcome {
-    width: 100%;
     display: flex;
 }
 
+.welcome__content {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.welcome__left,
+.welcome__right {
+    float: left;
+    width: 50%;
+    padding: 0 1%;
+    @include tablets() {
+        float: none;
+    }
+}
+
 .welcome__left {
-    position: relative;
+    text-align: right;
+    align-items: center;
+    @include tablets {
+        text-align: center;
+        width: 43vw;
+    }
+    @include phones {
+        width: 64vw;
+    }
 }
 
 .welcome__burger {
-    margin-left: 132px;
-    margin-top: -25px;
-}
-
-.welcom__drops {
-    position: absolute;
-    left: 97px;
-    top: -29px;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .welcome__right {
+    display: flex;
+    flex-direction: column;
     text-align: left;
-    margin-left: 15px;
+    justify-content: center;
+    padding-top: rem(30px);
+    @include tablets() {
+        text-align: center;
+        padding-top: 0;
+        width: auto;
+    }
 }
 
 .title {
-    font-family: 'gagalin';
-    font-size: 72px;
+    font-family: 'Gagalin';
+    font-size: rem(72px);
     text-transform: uppercase;
+    white-space: nowrap;
     color: #f9b43b;
-    margin-top: 25px;
+    margin-top: rem(25px);
+    @include tablets() {
+        font-size: 8vw;
+    }
+    @include phones {
+        font-size: 12vw;
+    }
 }
 
 .welcome__text {
-    font-family: 'lifehack';
-    font-size: 65px;
+    font-family: 'Lifehack';
+    font-size: rem(65px);
     color: #ffffff;
-    letter-spacing: -0.025em;
     line-height: 0.95em;
-    margin-top: 14px;
+    margin-top: rem(14px);
+    @include tablets() {
+        font-size: 6.5vw;
+        margin-top: 0;
+    }
+    @include phones {
+        font-size: 10vw;
+    }
 }
 
 .page1__link {
     display: block;
-    width: 100%;
-    height: 64px;
+    width: 100vw;
+    height: rem(64px);
     text-align: center;
 }
 
 .page1__triangle {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
-    border-left: 3px solid #ffffff;
-    border-bottom: 3px solid #ffffff;
+    width: rem(20px);
+    height: rem(20px);
+    border-radius: rem(4px);
+    border-left: rem(3px) solid #ffffff;
+    border-bottom: rem(3px) solid #ffffff;
     transform: rotate(-45deg);
-}
-
-.pages__nav {
-    position: fixed;
-    right: 152px;
-    top: 91px;
-}
-
-.pages__link {
-    display: block;
-    position: relative;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    border: 1px solid #ffffff;
-    margin-bottom: 5px;
-}
-
-.pages__link:before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #ffffff;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
 }

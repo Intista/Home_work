@@ -1,0 +1,44 @@
+.pages__nav {
+    position: fixed;
+    right: 13%;
+    top: 34%;
+    @include tablets {
+        display: none;
+    }
+}
+
+.pages__link {
+    display: block;
+    position: relative;
+    background: #ffffff;
+    width: rem(6px);
+    height: rem(6px);
+    border-radius: 50%;
+    margin-bottom: rem(15px);
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+    &:active {
+        &:before {
+            opacity: 1;
+        }
+    }
+}
+
+.pages__link:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: rem(16px);
+    height: rem(16px);
+    left: rem(-5px);
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    border: rem(1px) solid #ffffff;
+    opacity: 0;
+}
