@@ -586,15 +586,17 @@ p {
   opacity: 0;
   -webkit-transition: opacity 1s;
   -o-transition: opacity 1s;
-  transition: opacity 1s; }
-  .burgers__ingr-drop:before {
-    display: block;
-    position: absolute;
-    left: -35%;
-    top: -5%;
-    content: "";
-    height: 100%;
-    width: 135%; }
+  transition: opacity 1s;
+  /*     &:before {
+        display: block;
+        position: absolute;
+        left: -35%;
+        top: -5%;
+        content: "";
+        height: 100%;
+       width: 135%;
+    } 
+ */ }
   @media screen and (max-width: 480px) {
     .burgers__ingr-drop {
       width: 60vw; } }
