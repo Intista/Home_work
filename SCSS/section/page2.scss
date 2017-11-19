@@ -43,6 +43,10 @@
     font-family: 'Lifehack';
     font-size: rem(24px);
     line-height: 1.2em;
+    text-align: center;
+    @include phones {
+        text-align: left;
+    }
 }
 
 .content__desc p {
@@ -51,4 +55,8 @@
     font-weight: lighter;
     line-height: 1.7em;
     margin-top: rem(13px);
+    text-align: center;
+    @include phones {
+        text-align: left;
+    }
 }

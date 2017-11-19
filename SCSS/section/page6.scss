@@ -69,7 +69,6 @@
         font-family: 'Gagalin';
         font-size: rem(14px);
         text-transform: uppercase;
-        padding-top: 20%;
     }
     & p {
         font-family: 'Ubuntu';
@@ -82,12 +81,12 @@
         padding: 0 9%;
         text-align: center;
         & h3 {
-            font-size: 2.6vw;
-            padding-top: 3%;
+            font-size: 2vw;
+            padding-top: 0%;
         }
         & p {
-            font-size: 2.6vw;
-            padding-top: 3%;
+            font-size: 1.6vw;
+            padding-top: 1%;
         }
     }
     @include phones {
@@ -118,6 +117,6 @@
     text-decoration: none;
     text-transform: uppercase;
     @include tablets {
-        font-size: 2.6vw;
+        font-size: 1.6vw;
     }
 }
