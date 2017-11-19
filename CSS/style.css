@@ -560,6 +560,53 @@ p {
   font-size: 0.875rem;
   color: #ffffff;
   cursor: pointer; }
+  .burgers__ingr-btn:hover + .burgers__ingr-drop {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    left: 100%; }
+
+.burgers__ingr-drop {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0.3125rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.9375rem 1.4375rem;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  left: 9999px;
+  cursor: auto; }
+  .burgers__ingr-drop:before {
+    display: block;
+    position: absolute;
+    left: -10%;
+    top: 0;
+    content: "";
+    height: 50%;
+    width: 10%; }
+  .burgers__ingr-drop:hover {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    left: 100%; }
+  @media screen and (max-width: 480px) {
+    .burgers__ingr-drop {
+      width: 60vw; } }
+
+.burgers__drop-close {
+  display: none;
+  margin-left: 1.25rem;
+  cursor: pointer; }
+  @media screen and (max-width: 768px) {
+    .burgers__drop-close {
+      display: inline-block; } }
 
 .burgers__ccal {
   color: #ffffff;
@@ -575,37 +622,6 @@ p {
   position: relative;
   bottom: 2.125rem;
   font-size: 0.875rem; }
-
-.burgers__ingr-drop {
-  position: absolute;
-  left: 100%;
-  border-radius: 0.3125rem;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 0.9375rem 1.4375rem;
-  display: none;
-  opacity: 0;
-  -webkit-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
-  /*     &:before {
-        display: block;
-        position: absolute;
-        left: -35%;
-        top: -5%;
-        content: "";
-        height: 100%;
-       width: 135%;
-    } 
- */ }
-  @media screen and (max-width: 480px) {
-    .burgers__ingr-drop {
-      width: 60vw; } }
-
-.active {
-  opacity: 1;
-  -webkit-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s; }
 
 .burgers__ingr-item {
   display: -webkit-box;
@@ -634,13 +650,6 @@ p {
 .burgers__ingr-weight {
   width: 20%;
   text-align: right; }
-
-.burgers__drop-close {
-  display: none;
-  margin-left: 1.25rem; }
-  @media screen and (max-width: 768px) {
-    .burgers__drop-close {
-      display: inline-block; } }
 
 .burgers__content {
   display: -webkit-box;

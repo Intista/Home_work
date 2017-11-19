@@ -70,6 +70,49 @@
     font-size: rem(14px);
     color: #ffffff;
     cursor: pointer;
+    &:hover+.burgers__ingr-drop {
+        opacity: 1;
+        transition: opacity 0.5s;
+        left: 100%;
+    }
+}
+
+.burgers__ingr-drop {
+    position: absolute;
+    display: flex;
+    border-radius: rem(5px);
+    background: rgba(#ffffff, 0.9);
+    padding: rem(15px) rem(23px);
+    opacity: 0;
+    transition: opacity 0.5s;
+    left: 9999px;
+    cursor: auto;
+    &:before {
+        display: block;
+        position: absolute;
+        left: -10%;
+        top: 0;
+        content: "";
+        height: 50%;
+        width: 10%;
+    }
+    &:hover {
+        opacity: 1;
+        transition: opacity 0.5s;
+        left: 100%;
+    }
+    @include phones {
+        width: 60vw;
+    }
+}
+
+.burgers__drop-close {
+    display: none;
+    margin-left: rem(20px);
+    cursor: pointer;
+    @include tablets {
+        display: inline-block;
+    }
 }
 
 .burgers__ccal {
@@ -88,35 +131,6 @@
     position: relative;
     bottom: rem(34px);
     font-size: rem(14px);
-}
-
-.burgers__ingr-drop {
-    position: absolute;
-    left: 100%;
-    border-radius: rem(5px);
-    background: rgba(#ffffff, 0.9);
-    padding: rem(15px) rem(23px);
-    display: none;
-    opacity: 0;
-    transition: opacity 1s;
-    /*     &:before {
-        display: block;
-        position: absolute;
-        left: -35%;
-        top: -5%;
-        content: "";
-        height: 100%;
-       width: 135%;
-    } 
- */
-    @include phones {
-        width: 60vw;
-    }
-}
-
-.active {
-    opacity: 1;
-    transition: opacity 1s;
 }
 
 .burgers__ingr-item {
@@ -143,14 +157,6 @@
 .burgers__ingr-weight {
     width: 20%;
     text-align: right;
-}
-
-.burgers__drop-close {
-    display: none;
-    margin-left: rem(20px);
-    @include tablets {
-        display: inline-block;
-    }
 }
 
 .burgers__content {

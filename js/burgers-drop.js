@@ -14,7 +14,7 @@ button.addEventListener('mouseover', function() {
 
 });
 
-var buttonOut = button.onmouseout;
+var buttonOut = button.onmouseout();
 var dropOut = drop.onmouseout;
 
 if (buttonOut == true || dropOut == true) {
