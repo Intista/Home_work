@@ -146,6 +146,14 @@ p {
   .order-link:hover {
     background-color: #cb411b; }
 
+.bx-wrapper {
+  -webkit-box-shadow: initial;
+  box-shadow: initial;
+  border: 0;
+  background: initial; }
+  .bx-wrapper .bx-pager {
+    display: none; }
+
 .page1 {
   background-image: url("../image/page1/background.jpg");
   background-repeat: no-repeat;
@@ -462,13 +470,11 @@ p {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.scroll__left,
-.scroll__right {
+.scroll {
   width: 6%;
   height: 100%; }
   @media screen and (max-width: 768px) {
-    .scroll__left,
-    .scroll__right {
+    .scroll {
       width: 15%; } }
 
 .scroll-link__left,
@@ -486,9 +492,29 @@ p {
   -ms-flex-pack: end;
   justify-content: flex-end; }
 
+.burgers {
+  height: 100%;
+  width: 88%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media screen and (max-width: 768px) {
+    .burgers {
+      width: 70%; } }
+
+.burgers__list {
+  width: 100%; }
+
 .burgers__item {
   position: relative;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 .burgers__info {
   position: absolute;
@@ -516,7 +542,8 @@ p {
   align-items: flex-start; }
   @media screen and (max-width: 768px) {
     .burgers__info {
-      max-height: 100%;
+      bottom: initial;
+      height: auto;
       left: 0;
       width: 100%;
       min-width: 30%;
@@ -615,12 +642,12 @@ p {
 
 .burgers-ccal__value {
   position: relative;
-  bottom: 2.625rem;
+  bottom: 2.3125rem;
   font-size: 1.25rem; }
 
 .burgers-ccal__desc {
   position: relative;
-  bottom: 2.125rem;
+  bottom: 1.8125rem;
   font-size: 0.875rem; }
 
 .burgers__ingr-item {
@@ -706,8 +733,7 @@ p {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: left;
-  padding-left: 0.625rem;
-  padding-right: 0.625rem; }
+  padding: 0 0.625rem; }
   @media screen and (max-width: 768px) {
     .burgers__right {
       width: 100%;
@@ -849,12 +875,6 @@ p {
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg); }
 
-.team__item--active .team__content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
 .team__name {
   font-family: 'Gagalin';
   font-size: 0.875rem;
@@ -892,9 +912,13 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  display: none;
   margin-top: 0.8125rem;
-  margin-bottom: 2%; }
+  margin-bottom: 2%;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
   @media screen and (max-width: 768px) {
     .team__content {
       -webkit-box-orient: vertical;
@@ -1005,6 +1029,15 @@ p {
     background-position: 50%;
     background-size: cover; }
 
+.menu__item--active .menu__link {
+  color: #e25028; }
+
+.menu__item--active .menu__content {
+  width: 40vw; }
+  @media screen and (max-width: 768px) {
+    .menu__item--active .menu__content {
+      width: 64vw; } }
+
 .menu__link {
   width: 5rem;
   display: block;
@@ -1013,9 +1046,9 @@ p {
   text-decoration: none;
   position: relative;
   background: rgba(0, 0, 0, 0.7); }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .menu__link {
-      width: 11vw; } }
+      width: 12vw; } }
 
 .menu__link-text {
   display: block;
@@ -1048,7 +1081,9 @@ p {
   background: rgba(0, 0, 0, 0.7); }
 
 .menu__content--active {
-  width: 40vw; }
+  width: 34.375rem; }
+  .menu__content--active .menu__link {
+    color: #e25028; }
   @media screen and (max-width: 768px) {
     .menu__content--active {
       width: 64vw; } }

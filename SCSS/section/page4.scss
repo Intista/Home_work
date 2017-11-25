@@ -56,9 +56,6 @@
             transform: rotate(-180deg);
         }
     }
-    .team__content {
-        display: flex;
-    }
 }
 
 .team__name {
@@ -91,9 +88,11 @@
 
 .team__content {
     display: flex;
-    display: none;
     margin-top: rem(13px);
     margin-bottom: 2%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
     @include tablets {
         flex-direction: column;
         align-items: center;

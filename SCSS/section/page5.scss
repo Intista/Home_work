@@ -60,6 +60,18 @@
     }
 }
 
+.menu__item--active {
+    .menu__link {
+        color: $orange;
+    }
+    .menu__content {
+        width: 40vw;
+        @include tablets {
+            width: 64vw;
+        }
+    }
+}
+
 .menu__link {
     width: 5rem;
     display: block;
@@ -68,8 +80,8 @@
     text-decoration: none;
     position: relative;
     background: rgba(0, 0, 0, 0.7);
-    @include phones {
-        width: 11vw;
+    @include tablets {
+        width: 12vw;
     }
 }
 
@@ -103,7 +115,10 @@
 }
 
 .menu__content--active {
-    width: 40vw;
+    .menu__link {
+        color: $orange;
+    }
+    width: rem(550px);
     @include tablets {
         width: 64vw;
     }

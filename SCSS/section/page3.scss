@@ -7,8 +7,7 @@
     justify-content: space-between;
 }
 
-.scroll__left,
-.scroll__right {
+.scroll {
     width: 6%;
     height: 100%;
     @include tablets {
@@ -27,9 +26,25 @@
     justify-content: flex-end;
 }
 
+.burgers {
+    height: 100%;
+    width: 88%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    @include tablets {
+        width: 70%;
+    }
+}
+
+.burgers__list {
+    width: 100%;
+}
+
 .burgers__item {
     position: relative;
     height: 100%;
+    width: 100%;
 }
 
 .burgers__info {
@@ -44,7 +59,8 @@
     justify-content: space-between;
     align-items: flex-start;
     @include tablets {
-        max-height: 100%;
+        bottom: initial;
+        height: auto;
         left: 0;
         width: 100%;
         min-width: 30%;
@@ -123,13 +139,13 @@
 
 .burgers-ccal__value {
     position: relative;
-    bottom: rem(42px);
+    bottom: rem(37px);
     font-size: rem(20px);
 }
 
 .burgers-ccal__desc {
     position: relative;
-    bottom: rem(34px);
+    bottom: rem(29px);
     font-size: rem(14px);
 }
 
@@ -192,8 +208,7 @@
 .burgers__right {
     flex-direction: column;
     text-align: left;
-    padding-left: rem(10px);
-    padding-right: rem(10px);
+    padding: 0 rem(10px);
     @include tablets {
         width: 100%;
         align-items: center;
