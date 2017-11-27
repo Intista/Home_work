@@ -13,7 +13,7 @@ hambMenu.addEventListener('click', function() {
 
 hambClose.addEventListener('click', function() {
     hambNav.style.display = 'none';
-    content.style.display = 'Pic';
+    content.style.display = 'block';
 });
 
 //drop close
