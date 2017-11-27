@@ -164,7 +164,7 @@ $(document).ready(function(options) {
 })
 
 //One Page Scroll
-
+/* 
 $(function() {
     const main = $('.maincontent')
     $(main).bind('scroll', function(e) {
@@ -172,14 +172,15 @@ $(function() {
         const $this = $(this),
             pages = main.find('.page', ),
             activePage = pages.filter('.page--active'),
-            reqPage = activePage.next()
+            reqPage = activePage.next(),
+            reqIndex = reqPage.index()
         pages.animate({
-            'top': -100 % ;
-        })
+            'top': -100*reqIndex + '%' 
+        }, 500)
 
 
 
     })
 
 
-})
+}) */
