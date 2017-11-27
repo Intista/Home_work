@@ -248,8 +248,15 @@
     font-family: 'Gagalin';
     font-size: rem(72px);
     color: $orange;
+    @include phones {
+        font-size: rem(50px);
+        margin-right: rem(20px);
+    }
 }
 
 .burger__currency {
     font-size: rem(30px);
+    @include phones {
+        font-size: rem(17px);
+    }
 }

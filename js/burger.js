@@ -13,7 +13,7 @@ hambMenu.addEventListener('click', function() {
 
 hambClose.addEventListener('click', function() {
     hambNav.style.display = 'none';
-    content.style.display = 'block';
+    content.style.display = 'Pic';
 });
 
 //drop close
@@ -35,6 +35,11 @@ button.addEventListener('mouseover', function() {
 //team accordeon
 
 $(function() {
+    const content = $('.team__content');
+    content.css({
+        'height': 0
+    })
+
     $('.team__name').on('click', e => {
         e.preventDefault()
 
@@ -54,7 +59,7 @@ $(function() {
             })
 
             content.css({
-                'height': auto
+                'height': ''
             })
 
         } else {
@@ -155,6 +160,26 @@ $(document).ready(function(options) {
     bxViewport.css({
         overflow: 'visible'
     })
-});
+
+})
 
 //One Page Scroll
+
+$(function() {
+    const main = $('.maincontent')
+    $(main).bind('scroll', function(e) {
+        e.preventDefault()
+        const $this = $(this),
+            pages = main.find('.page', ),
+            activePage = pages.filter('.page--active'),
+            reqPage = activePage.next()
+        pages.animate({
+            'top': -100 % ;
+        })
+
+
+
+    })
+
+
+})

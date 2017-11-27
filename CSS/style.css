@@ -98,13 +98,15 @@ p {
 
 .maincontent {
   height: 100%;
-  min-height: 650px; }
+  min-height: 650px;
+  overflow: hidden; }
 
 .page {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.31);
   min-height: 650px;
-  overflow: hidden; }
+  position: relative;
+  top: 0; }
 
 .container {
   height: 100%;
@@ -782,9 +784,16 @@ p {
   font-family: 'Gagalin';
   font-size: 4.5rem;
   color: #e25028; }
+  @media screen and (max-width: 480px) {
+    .burgers__price {
+      font-size: 3.125rem;
+      margin-right: 1.25rem; } }
 
 .burger__currency {
   font-size: 1.875rem; }
+  @media screen and (max-width: 480px) {
+    .burger__currency {
+      font-size: 1.0625rem; } }
 
 .page4 {
   background-image: url("../image/page4/background.jpg");
@@ -914,11 +923,10 @@ p {
   display: flex;
   margin-top: 0.8125rem;
   margin-bottom: 2%;
-  height: 0;
   overflow: hidden;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s; }
+  -webkit-transition: height .5s;
+  -o-transition: height .5s;
+  transition: height .5s; }
   @media screen and (max-width: 768px) {
     .team__content {
       -webkit-box-orient: vertical;
