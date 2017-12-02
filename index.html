@@ -15,7 +15,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent" id="maincontent">
-            <section class="page page1 page--active">
+            <section class="page page1 active">
                 <div class="container page1__container">
                     <header class="header">
                         <div class="header__logo">
@@ -26,27 +26,27 @@
                         <nav class="header__nav">
                             <ul class="nav__list">
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">о нас</a>
+                                    <a href="" class="nav__link" data-scroll-to="1">о нас</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">бургеры</a>
+                                    <a href="" class="nav__link" data-scroll-to="2">бургеры</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link">команда</a>
+                                    <a href="" class="nav__link" data-scroll-to="3">команда</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">меню</a>
+                                    <a href="" class="nav__link" data-scroll-to="4">меню</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">отзывы</a>
+                                    <a href="" class="nav__link" data-scroll-to="5">отзывы</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">контакты</a>
+                                    <a href="" class="nav__link" data-scroll-to="8">контакты</a>
                                 </li>
                             </ul>
                         </nav>
                         <div class="header__btn">
-                            <a href="" class="order-link">Заказать</a>
+                            <a href="" class="order-link" data-scroll-to="7">Заказать</a>
                             <div class="hamburger__menu">
                                 <div class="hamburger__btn" id="hamburger__btn">
                                     <a class="hamburger-link" href="#">
@@ -120,70 +120,71 @@
                     <div class="burgers">
                         <ul class="burgers__list slider">
                             <li class="burgers__item">
-                                <div class="burgers__info">
-                                    <div class="burgers__ingr">
-                                        <div class="burgers__ingr-btn" id="burgers__btn">
-                                            <img src="image/page3/burger.svg" alt="" class="burgers__icon">
-                                            <div class="burgers__desc">состав</div>
-                                        </div>
-                                        <div class="burgers__ingr-drop" id="burgers__drop">
-                                            <ul class="burgers__ingr-list">
-                                                <li class="burgers__ingr-item">
-                                                    <div class="burgers__ingr-icon">
-                                                        <img src="image/page3/drop/bull.png" alt="" class="burgers__ingr-img">
-                                                    </div>
-                                                    <div class="burgers__ingr-name">Говядина</div>
-                                                    <div class="burgers__ingr-weight">300 г</div>
-                                                </li>
-                                                <li class="burgers__ingr-item">
-                                                    <div class="burgers__ingr-icon">
-                                                        <img src="image/page3/drop/buns.png" alt="" class="burgers__ingr-img">
-                                                    </div>
-                                                    <div class="burgers__ingr-name">Булочки</div>
-                                                    <div class="burgers__ingr-weight">100 г</div>
-                                                </li>
-                                                <li class="burgers__ingr-item">
-                                                    <div class="burgers__ingr-icon">
-                                                        <img src="image/page3/drop/salad.png" alt="" class="burgers__ingr-img">
-                                                    </div>
-                                                    <div class="burgers__ingr-name">Зелень</div>
-                                                    <div class="burgers__ingr-weight">70 г</div>
-                                                </li>
-                                                <li class="burgers__ingr-item">
-                                                    <div class="burgers__ingr-icon">
-                                                        <img src="image/page3/drop/sauce.png" alt="" class="burgers__ingr-img">
-                                                    </div>
-                                                    <div class="burgers__ingr-name">Соус</div>
-                                                    <div class="burgers__ingr-weight">100 г</div>
-                                                </li>
-                                                <li class="burgers__ingr-item">
-                                                    <div class="burgers__ingr-icon">
-                                                        <img src="image/page3/drop/cucumber.png" alt="" class="burgers__ingr-img">
-                                                    </div>
-                                                    <div class="burgers__ingr-name">Овощи</div>
-                                                    <div class="burgers__ingr-weight">200 г</div>
-                                                </li>
-                                                <li class="burgers__ingr-item">
-                                                    <div class="burgers__ingr-icon">
-                                                        <img src="image/page3/drop/cheese.png" alt="" class="burgers__ingr-img">
-                                                    </div>
-                                                    <div class="burgers__ingr-name">Сыр</div>
-                                                    <div class="burgers__ingr-weight">80 г</div>
-                                                </li>
-                                            </ul>
-                                            <div class="burgers__drop-close" id="burgers__close">
-                                                <img class="burgers__drop-img" src="image/page3/drop/close.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="burgers__ccal">
-                                        <img src="image/page3/kkal.svg" alt="" class="burgers-ccal__img">
-                                        <div class="burgers-ccal__value">1200</div>
-                                        <div class="burgers-ccal__desc">ккал</div>
-                                    </div>
-                                </div>
+
                                 <div class="burgers__content">
                                     <div class="burgers__left">
+                                        <div class="burgers__info">
+                                            <div class="burgers__ingr">
+                                                <div class="burgers__ingr-btn" id="burgers__btn">
+                                                    <img src="image/page3/burger.svg" alt="" class="burgers__icon">
+                                                    <div class="burgers__desc">состав</div>
+                                                </div>
+                                                <div class="burgers__ingr-drop" id="burgers__drop">
+                                                    <ul class="burgers__ingr-list">
+                                                        <li class="burgers__ingr-item">
+                                                            <div class="burgers__ingr-icon">
+                                                                <img src="image/page3/drop/bull.png" alt="" class="burgers__ingr-img">
+                                                            </div>
+                                                            <div class="burgers__ingr-name">Говядина</div>
+                                                            <div class="burgers__ingr-weight">300 г</div>
+                                                        </li>
+                                                        <li class="burgers__ingr-item">
+                                                            <div class="burgers__ingr-icon">
+                                                                <img src="image/page3/drop/buns.png" alt="" class="burgers__ingr-img">
+                                                            </div>
+                                                            <div class="burgers__ingr-name">Булочки</div>
+                                                            <div class="burgers__ingr-weight">100 г</div>
+                                                        </li>
+                                                        <li class="burgers__ingr-item">
+                                                            <div class="burgers__ingr-icon">
+                                                                <img src="image/page3/drop/salad.png" alt="" class="burgers__ingr-img">
+                                                            </div>
+                                                            <div class="burgers__ingr-name">Зелень</div>
+                                                            <div class="burgers__ingr-weight">70 г</div>
+                                                        </li>
+                                                        <li class="burgers__ingr-item">
+                                                            <div class="burgers__ingr-icon">
+                                                                <img src="image/page3/drop/sauce.png" alt="" class="burgers__ingr-img">
+                                                            </div>
+                                                            <div class="burgers__ingr-name">Соус</div>
+                                                            <div class="burgers__ingr-weight">100 г</div>
+                                                        </li>
+                                                        <li class="burgers__ingr-item">
+                                                            <div class="burgers__ingr-icon">
+                                                                <img src="image/page3/drop/cucumber.png" alt="" class="burgers__ingr-img">
+                                                            </div>
+                                                            <div class="burgers__ingr-name">Овощи</div>
+                                                            <div class="burgers__ingr-weight">200 г</div>
+                                                        </li>
+                                                        <li class="burgers__ingr-item">
+                                                            <div class="burgers__ingr-icon">
+                                                                <img src="image/page3/drop/cheese.png" alt="" class="burgers__ingr-img">
+                                                            </div>
+                                                            <div class="burgers__ingr-name">Сыр</div>
+                                                            <div class="burgers__ingr-weight">80 г</div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="burgers__drop-close" id="burgers__close">
+                                                        <img class="burgers__drop-img" src="image/page3/drop/close.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="burgers__ccal">
+                                                <img src="image/page3/kkal.svg" alt="" class="burgers-ccal__img">
+                                                <div class="burgers-ccal__value">1200</div>
+                                                <div class="burgers-ccal__desc">ккал</div>
+                                            </div>
+                                        </div>
                                         <img src="image/page3/dark-beef-burger.png" alt="" class="burgers__img">
                                     </div>
                                     <div class="burgers__right">
@@ -198,7 +199,7 @@
                                                 500<span class="burger__currency">рублей</span>
                                             </div>
                                             <div class="burgers__button">
-                                                <a href="" class="order-link">заказать</a>
+                                                <a href="" class="order-link" data-scroll-to="7">заказать</a>
                                             </div>
                                         </div>
                                     </div>
@@ -836,29 +837,29 @@
         </div>
         <nav class="pages__nav">
             <ul class="pages__list">
-                <li class="pages__item">
-                    <a href="" class="pages__link"></a>
+                <li class="pages__item active">
+                    <a href="" class="pages__link" data-scroll-to="0"></a>
                 </li>
                 <li class="pages__item">
-                    <a href="" class="pages__link"></a>
+                    <a href="" class="pages__link" data-scroll-to="1"></a>
                 </li>
                 <li class="pages__item">
-                    <a href="" class="pages__link"></a>
+                    <a href="" class="pages__link" data-scroll-to="2"></a>
                 </li>
                 <li class="pages__item">
-                    <a href="" class="pages__link"></a>
+                    <a href="" class="pages__link" data-scroll-to="3"></a>
                 </li>
                 <li class="pages__item">
-                    <a href="" class="pages__link"></a>
+                    <a href="" class="pages__link" data-scroll-to="4"></a>
                 </li>
                 <li class="pages__item">
-                    <a href="" class="pages__link"></a>
+                    <a href="" class="pages__link" data-scroll-to="5"></a>
                 </li>
                 <li class="pages__item">
-                    <a href="" class="pages__link"></a>
+                    <a href="" class="pages__link" data-scroll-to="6"></a>
                 </li>
                 <li class="pages__item">
-                    <a href="" class="pages__link"></a>
+                    <a href="" class="pages__link" data-scroll-to="7"></a>
                 </li>
             </ul>
         </nav>
@@ -877,27 +878,40 @@
             </div>
             <ul class="hamburger__list">
                 <li class="hamburger__item">
-                    <a href="#" class="hamburger__link">почему мы</a>
+                    <a href="#" class="hamburger__link" data-scroll-to="1">почему мы</a>
                 </li>
                 <li class="hamburger__item">
-                    <a href="#" class="hamburger__link">меню</a>
+                    <a href="#" class="hamburger__link" data-scroll-to="4">меню</a>
                 </li>
                 <li class="hamburger__item">
-                    <a href="#" class="hamburger__link">советы</a>
+                    <a href="#" class="hamburger__link" data-scroll-to="5">советы</a>
                 </li>
                 <li class="hamburger__item">
-                    <a href="#" class="hamburger__link">кто мы</a>
+                    <a href="#" class="hamburger__link" data-scroll-to="3">кто мы</a>
                 </li>
                 <li class="hamburger__item">
-                    <a href="#" class="hamburger__link">свяжитесь с нами</a>
+                    <a href="#" class="hamburger__link" data-scroll-to="7">свяжитесь с нами</a>
                 </li>
                 <li class="hamburger__item">
-                    <a href="#" class="hamburger__link">контакты</a>
+                    <a href="#" class="hamburger__link" data-scroll-to="8">контакты</a>
                 </li>
             </ul>
         </nav>
+        <div class="reviews__modal">
+            <div class="reviews__modal-block">
+                <div class="reviews__modal-name">Константин Спилберг</div>
+                <div class="reviews__modal-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять,
+                    невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                <div class="reviews__modal-close">
+                    <img class="reviews__modal-img" src="image/page6/close.png" alt="close">
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+
     <script src="js/burger.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>

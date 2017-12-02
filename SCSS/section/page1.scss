@@ -77,13 +77,17 @@
     margin-right: 7%;
     margin-left: 1%;
     display: flex;
+    position: relative;
     align-items: center;
     @include tablets {
-        margin-right: 3%;
+        margin-right: 13%;
     }
 }
 
-.hamburger__btn {
+.hamburger__menu {
+    position: fixed;
+    right: 4%;
+    top: 6%;
     display: none;
     @include tablets {
         display: block;
