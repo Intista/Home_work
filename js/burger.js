@@ -268,3 +268,13 @@ $('[data-scroll-to]').on('click touchstart', e => {
     })
     performTransition(sectionIndex);
 });
+
+// Yandex Map
+
+var myMap;
+ymaps.ready(function() {
+    myMap = new ymaps.Map("YMapsID", {
+        center: [55.76, 37.64],
+        zoom: 10
+    });
+});
