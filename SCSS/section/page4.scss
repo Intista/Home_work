@@ -16,11 +16,12 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    justify-content: center;
+    padding-top: 13%;
     padding-left: 6%;
     @include tablets {
         width: 100%;
-        padding: 0;
+        padding-left: 0;
+        padding-top: 20%;
         align-items: center;
     }
 }
@@ -56,9 +57,6 @@
             transform: rotate(-180deg);
         }
     }
-    .team__content {
-        display: flex;
-    }
 }
 
 .team__name {
@@ -91,9 +89,9 @@
 
 .team__content {
     display: flex;
-    display: none;
     margin-top: rem(13px);
     margin-bottom: 2%;
+    overflow: hidden;
     @include tablets {
         flex-direction: column;
         align-items: center;
