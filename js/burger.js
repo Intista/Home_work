@@ -278,8 +278,24 @@ ymaps.ready(function() {
         zoom: 11
     });
     myMap.controls.add('zoomControl');
+    myMap.events.add('touchmove', function(e) {
+        e.preventDefault();
+    })
 
-    var myPlacemark = new ymaps.Placemark([59.945396, 30.382825], {}, {
-        preset: 'twirl#blueDotIcon'
-    });
+    var markers = [
+            [59.942383, 30.217069],
+            [59.888716, 30.311712],
+            [59.971920, 30.313874],
+            [59.917428, 30.491673]
+        ],
+        myCollection = new ymaps.GeoObjectCollection({}, {
+            iconImageHref: './image/page8/map-marker.png',
+            draggable: false
+        });
+
+    for (var i = 0; i < markers.length; i++) {
+        myCollection.add(new ymaps.Placemark(markers[i]));
+    }
+
+    myMap.geoObjects.add(myCollection);
 });
