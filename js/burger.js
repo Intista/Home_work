@@ -274,7 +274,12 @@ $('[data-scroll-to]').on('click touchstart', e => {
 var myMap;
 ymaps.ready(function() {
     myMap = new ymaps.Map("YMapsID", {
-        center: [55.76, 37.64],
-        zoom: 10
+        center: [59.939764, 30.350236],
+        zoom: 11
+    });
+    myMap.controls.add('zoomControl');
+
+    var myPlacemark = new ymaps.Placemark([59.945396, 30.382825], {}, {
+        preset: 'twirl#blueDotIcon'
     });
 });

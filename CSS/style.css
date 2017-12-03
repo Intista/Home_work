@@ -1275,13 +1275,6 @@ p {
   line-height: 1.8;
   text-align: left; }
 
-.socials__icon {
-  fill: #5e5e5e;
-  max-height: 1.25rem;
-  max-width: 1.375rem; }
-  .socials__icon:hover {
-    fill: #ffffff; }
-
 .page6__container {
   height: 100%;
   max-width: 100%;
@@ -1691,6 +1684,19 @@ p {
 
 .socials__item {
   margin-left: 1.25rem; }
+
+.socials__icon {
+  fill: #5e5e5e;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  max-height: 1.25rem;
+  max-width: 1.375rem; }
+  .socials__icon:hover {
+    fill: #ffffff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
 .pages__nav {
   position: fixed;

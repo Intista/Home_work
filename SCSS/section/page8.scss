@@ -74,3 +74,15 @@
 .socials__item {
     margin-left: rem(20px);
 }
+
+.socials__icon {
+    fill: #5e5e5e;
+    transition: 0.3s;
+    max-height: rem(20px);
+    max-width: rem(22px);
+    ;
+    &:hover {
+        fill: #ffffff;
+        transition: 0.3s;
+    }
+}
